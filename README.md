@@ -2,6 +2,11 @@
 
 Inspired by [google-cli](https://www.npmjs.com/package/google-cli) npm package, which do the job, but too slow and has some issues (from my perspective).
 
+## Usage
+````shell
+google "cats pictures"
+````
+
 ## Instalation
 
 ### Windows:
