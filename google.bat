@@ -1,6 +1,9 @@
 @echo off
-REM THE BEST PROGRAM I HAVE EVER WRITTEN!!!
-REM Copy-right: a13ks3y.ass@gmail.com https://a13ks3y.github.io
-REM https://github.com/a13ks3y/google-cli
+set "REG_KEY=HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe"
+set "REG_VALUE=Path"
 
-"C:\Program Files\Google\Chrome\Application\chrome.exe" https://google.com/search?q=%1
+for /f "tokens=2*" %%a in ('reg query "%REG_KEY%" /v "%REG_VALUE%" ^| findstr /i "%REG_VALUE%"') do (
+    set "CHROME_PATH=%%b"
+)
+
+"%CHROME_PATH%/chrome.exe" https://google.com/search?q=%*
