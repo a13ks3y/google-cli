@@ -6,4 +6,4 @@ for /f "tokens=2*" %%a in ('reg query "%REG_KEY%" /v "%REG_VALUE%" ^| findstr /i
     set "CHROME_PATH=%%b"
 )
 
-"%CHROME_PATH%/chrome.exe" https://google.com/search?q=%*
+"%CHROME_PATH%/chrome.exe" https://google.com/search?q="%*"
