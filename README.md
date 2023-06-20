@@ -5,12 +5,13 @@ Inspired by [google-cli](https://www.npmjs.com/package/google-cli) npm package, 
 ## Usage
 
 ````shell
-google "cats pictures"
+google something funny
 ````
 
 ## Instalation
 
 ### Windows:
+Run install.bat **as Adminsitrator** or just
 Copy [google.bat](https://github.com/a13ks3y/google-cli/raw/master/google.bat) to your PATH directory, reload terminal.
 
 ### Other OS:
